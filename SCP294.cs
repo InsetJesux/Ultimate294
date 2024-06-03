@@ -64,7 +64,7 @@ namespace SCP294
 
             Timing.KillCoroutines(hintCoroutine);
 
-            _harmony.UnpatchAll();
+            _harmony.UnpatchAll(_harmony.Id);
             _harmony = null;
 
             Log.Info("Disabled Plugin Successfully");
